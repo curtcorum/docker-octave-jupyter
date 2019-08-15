@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  octave-jupyter:
+    image: xxxxxxxxxxx/octave-jupyter:latest
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 8888:8888
+    command: jupyter notebook --allow-root
+    volumes:
+      .:/code
