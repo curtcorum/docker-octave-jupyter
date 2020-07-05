@@ -10,4 +10,4 @@ services:
       - 8888:8888
     command: jupyter notebook --allow-root
     volumes:
-      .:/code
+      - .:/code
